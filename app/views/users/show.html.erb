@@ -1,2 +1,9 @@
-<h1>Titles#show</h1>
-<p>Find me in app/views/titles/show.html.erb</p>
+<h2>投稿詳細</h2>
+  <p>
+    <%= @user.title %>
+    <%= @user.content %>
+  </p>
+
+<%= link_to "一覧に戻る", users_path %>
+<td><%= link_to "編集", edit_user_path %></td>
+<td><%= button_to "削除", user_path, method: :delete, data: {turbo_method: :delete, turbo_confirm: "本当に削除しますか?"} %></td
