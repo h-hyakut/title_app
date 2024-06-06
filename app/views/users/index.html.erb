@@ -16,7 +16,7 @@
       <tr>
         <td><%= link_to user.title, user_path(user) %></td>
         <td><%= link_to "編集", edit_user_path(user) %></td>
-        <td><%= button_to "削除", user_path(user), method: :delete, data: {turbo_method: :delete, turbo_confirm: "本当に削除しますか?"} %></td
+        <td><%= button_to "削除", user_path(user), method: :delete, data: {turbo_confirm: "本当に削除しますか?"} %></td
       </tr>
     <% end %>
   </tbody>
